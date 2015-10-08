@@ -1,2 +1,20 @@
 <h1>.::Remember::.</h1>
+
 <p>Seja bem-vindo!</p>
+
+<% if user_signed_in? %>
+<ul>
+    <li><%= current_user.email %></li>
+    <li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
+</ul>
+<% else %>
+<ul>
+  <li><%= link_to "Novo cadastro", new_user_registration_path %></li>
+  <li><%= link_to "Logar", new_user_session_path %></li>
+</ul>
+<% end %>
+
+<ul>
+  <li><%= link_to "Anotações", annotations_path %></li>
+  <li><%= link_to "Amigos", friends_path %></li>
+</ul>

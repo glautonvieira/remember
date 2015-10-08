@@ -1,7 +1,7 @@
 "pt-BR":
   activerecord:
     models:
-      annotation: Anotação
+      annotation: Anotações
       friend: Amigos
     attributes:
       annotation:

@@ -4,10 +4,13 @@ source 'https://rubygems.org'
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
-gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails"
+gem 'therubyracer'
+gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'twitter-bootstrap-rails'
 gem 'will_paginate', '~> 3.0.6'
+
+gem 'devise'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
